@@ -1,0 +1,80 @@
+/********************css reset***********************/
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+ul , ol{ list-style: none;}
+.clearfix{ content: '';  display: block; clear: both;}
+h1,h2,h3,h4,h5,h6{ font-weight: normal;}
+img{ vertical-align: top;}
+a{ text-decoration: none;}
+a:hover ,a:visited{ text-decoration: none;}
+
+/*********************public css******************/
+svg{ width: 1.5em; height: 1.5em; line-height: 1.5em; vertical-align: top;}
+.connects , .globarNavigation , .profile h1 , .profile span{ color: white;}
+.connects , .bestProjects , .tabs-container{ max-width: 800px;}
+
+/*************connects-wrapper css*****************/
+.connects-wrapper{ background-color: rgb(247,97,96);}
+.connects{ position: relative;}
+.connects::after{ content: ''; position: absolute; top: 100%; left: 93%; border-width: 14px 10px; border-style: solid; border-color: rgb(247,97,96);
+    border-left-color: transparent; border-right-color: transparent; border-bottom: none;}
+.connects > ul{ display: flex; justify-content: center; }
+.connects > ul > li{ margin-right: 1.5em; padding: 0.5em 0.5em;}
+.globarNavigation{  background: rgb(55,71,96);}
+.globarNavigation ul{ display: flex; justify-content: center;}
+.globarNavigation ul li{ padding-top: 3em; padding-bottom: 3em; padding-right: 3em;}
+
+/************************profile css*****************************/
+.profile{ background: transparent url(./images/wallhaven-bigBg.jpg) no-repeat center; background-size: cover; height: 525px; padding-top: 60px; position: relative;
+    top: 0; left: 0; z-index: 0;
+}
+.profile h1{ position: absolute; top: 80px; left: 45%; z-index: 1;}
+.profile p{ position: absolute; top: 140px; left: 43%; z-index: 2;}
+.profile .job-title{ padding-right: 15px;}
+.profile .job-city{ background: rgb(247,97,96); border-radius: 8px; padding: 0.2em 0.5em;}
+.profile::after{ content:''; background: red; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(55, 71, 96, 0.3);  }
+
+/*************************bestProjects css***************************/
+.bestProjects{ margin: -120px auto 0; display: flex; justify-content:space-between; position: relative; z-index: 3;}
+.viewer{ max-width: 380px; box-shadow: 0 0 3px rgba(0, 0, 0, 0.3); }
+.viewer > .project-view > a > img{   max-width: 100%; }
+.viewer > .project-name{ text-align: center; padding: 20px 0; background: rgb(237,244,252);}
+.viewer > .project-links{ display: flex; justify-content: space-between; padding: 0.5em 1em;}
+.project-links .preview{ background: rgb(247,97,96); padding: 0.3em 1.2em; text-align: center; border-radius: 6px; color: white;}
+.project-links .raw-code{ background: rgb(237,244,252); padding: 0.3em 1.2em; text-align: center; border-radius: 6px;}
+
+/********************************tabs-container***********************************/
+.tabs-container{ color: #000 ; margin: 40px auto;}
+.tabs-content .projects{ display: none;}
+.tabs-content .experience{ display: none;}
+.tabs-content .skill{ display: none;}
+.tabs-content .self-introduction{ display: none;}
+
+.tabs-nav{ width: 100%; border-width: 3px; border-style: solid; border-color: rgb(237,244,252);}
+.tabs-nav ul{ display: flex; justify-content: space-between;}
+.tabs-nav ul li{ padding: 0.5em 3em; text-align: center;}
+.tabs-nav ul li.current{ background: rgb(237,244,252); position: relative;}
+.tabs-nav ul li.current::after{ content: ''; border-width: 14px 10px; border-style: solid; border-color: rgb(237,244,252);
+    border-left-color: transparent; border-right-color: transparent; border-bottom: none; position: absolute; top: 100%; left: 50%; }
+.tabs-content .projects.active{ display: block;}
+.tabs-content .projects ul { display: flex; justify-content: space-between; flex-wrap: wrap; margin: 16px 0; }
+.tabs-content .projects ul li{ width: 30%; margin: 16px 0; text-align: center;}
+.tabs-content .projects ul li a.demo-links p{ display: none;}
+.tabs-content .projects ul li a.demo-links{ display: block; max-width: 300px; padding: 55px 0; border: 1px solid #ddd;}
+.tabs-content .projects ul li a.demo-links:hover{ background: rgba(0,0,0,0.3);}
+.tabs-content .projects ul li a.demo-links:hover p{ display: block; color: #000;}
+a.demo-links span{  color: #dddddd; font-size: 30px; font-weight: bold;  }
+.tabs-content .projects ul li h2{ font-size: 14px; margin-top: 6px; }
+
+.tabs-content .experience.active{ display: block; margin: 16px 0;}
+.tabs-content .skill.active{ display: block; margin: 16px 0; }
+.tabs-content .skill.active h2{ text-align: center; margin: 16px 0; margin-bottom: 16px;}
+.tabs-content .skill.active ul.skill-item{  max-width: 400px; margin: 0 auto; position: relative; left: 50px;}
+.tabs-content .skill.active ul.skill-item ul{ font-size: 12px; color: #999; }
+.tabs-content .skill.active ul.skill-item li.skill-subItem{ margin-bottom: 20px;}
+.tabs-content .skill.active ul.skill-item .skill-subItem::before{ content: ''; display: block; width: 40px; height: 40px; border-radius: 50%; border: 1px solid #AABCCF;
+    background:  white url(./images/qianduan-img.png) no-repeat center; background-size: cover; position: absolute; left: -65px;}
+.tabs-content .skill.active ul.skill-item .skill-subItem::after{ content: ''; display: block; width: 0; height: 100%;      border-left: 1px solid #AABCCF; position: absolute; top: 20px; left: -45px;}
+.tabs-content .self-introduction.active{ display: block; margin: 16px 0;}
+
+/*******************self-version*****************/
+.self-version{ min-height: 100px; background: rgb(237,244,252); text-align: center; line-height: 100px; color: #999;}
