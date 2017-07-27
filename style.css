@@ -24,7 +24,7 @@ svg{ width: 1.5em; height: 1.5em; line-height: 1.5em; vertical-align: top;}
 .globarNavigation ul li{ padding-top: 3em; padding-bottom: 3em; padding-right: 3em;}
 
 /************************profile css*****************************/
-.profile{ background: transparent url(./images/wallhaven-bigBg.jpg) no-repeat center; background-size: cover; height: 525px; padding-top: 60px; position: relative;
+.profile{ background: transparent url(./images/self-pic.jpg) no-repeat center; background-size: cover; height: 525px; padding-top: 60px; position: relative;
     top: 0; left: 0; z-index: 0;
 }
 .profile h1{ position: absolute; top: 80px; left: 45%; z-index: 1;}
